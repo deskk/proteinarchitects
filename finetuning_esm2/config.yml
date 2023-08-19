@@ -1,0 +1,14 @@
+fasta_folder_path: "C:\\hackathon_genai\\fulldataset"
+training:
+  evaluation_strategy: "epoch"
+  save_strategy: "epoch"
+  num_train_epochs: 5
+  per_device_train_batch_size: 32
+  save_steps: 10000
+  save_total_limit: 2
+  learning_rate: 2e-5
+  warmup_steps: 500
+  weight_decay: 0.01
+model:
+  pretrained_model: "facebook/esm2_t33_650M_UR50D"
+  mlm_probability: 0.15
