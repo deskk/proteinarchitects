@@ -10,13 +10,13 @@ def generate_msa_with_muscle(input_fasta, output_msa):
     stdout, stderr = muscle_cline()
 
 def main():
-    # Input directory containing FASTA files
+
     input_dir = "/content/drive/MyDrive/fulldataset/fulldataset"
 
     # Output directory for saving the MSA files
     output_dir = "/content/drive/MyDrive/MSA_dataset"
 
-    # Create the output directory if it doesn't exist
+
     os.makedirs(output_dir, exist_ok=True)
 
 
